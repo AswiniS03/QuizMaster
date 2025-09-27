@@ -1,0 +1,90 @@
+/* ========================================= */
+/* --- Navbar Styles (Navbar.css) --- */
+/* ========================================= */
+
+.app-navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4CAF50; /* Branded color */
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* --- Base Button Styling for both Log In and Sign Up --- */
+.login-nav-button {
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s;
+
+  /* --- PRIMARY (Sign Up) Button Style --- */
+  background-color: #4CAF50; /* Primary brand color */
+  color: white;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-nav-button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    transform: translateY(-1px);
+}
+
+
+/* --- SECONDARY (Log In) Button Style --- */
+/* This style overrides the primary style when the secondary-nav-button class is present */
+.secondary-nav-button {
+    background-color: transparent;
+    color: #6a6a8e;
+    border: 2px solid #dcdcdc;
+    box-shadow: none;
+}
+
+.secondary-nav-button:hover {
+    background-color: #f0f2f5;
+    border-color: #c0c0c0;
+    transform: none; /* Remove primary button lift effect */
+}
+
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .navbar-content {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .nav-links {
+    justify-content: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,153 @@
+/* ========================================= */
+/* --- ABOUT PAGE STYLES (AboutPage.css) --- */
+/* ========================================= */
+
+.about-page-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content on the screen */
+    padding: 0 30px 60px 30px; /* Padding for inner content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a2e;
+}
+
+/* --- Hero Section --- */
+.about-hero {
+    text-align: center;
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.about-headline {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3e3e5c;
+}
+
+.about-tagline {
+    font-size: 1.1rem;
+    color: #6a6a8e;
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+}
+
+/* --- Section Layouts --- */
+.about-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4CAF50; /* Branded color for section titles */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Specific layout for Mission section */
+.mission-section .section-content {
+    max-width: 60%;
+    padding-right: 30px;
+}
+
+.mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-section p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #3e3e5c;
+}
+
+.section-graphic {
+    width: 350px;
+    height: 200px;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6a6a8e;
+    font-style: italic;
+}
+
+/* --- Audience Card Grid --- */
+.card-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.audience-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.audience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.audience-card h4 {
+    font-size: 1.4rem;
+    color: #007bff; /* Secondary feature color */
+    margin-bottom: 10px;
+}
+
+.audience-card p {
+    color: #6a6a8e;
+    font-size: 0.95rem;
+}
+
+/* --- Final CTA Section --- */
+.about-cta {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #e6f3e6; /* Light branded background */
+    border-radius: 12px;
+}
+
+.about-cta p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3e3e5c;
+    margin-bottom: 20px;
+}
+
+/* CTA button styling will reuse .login-button and .main-cta-button from your shared CSS */
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .mission-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mission-section .section-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .section-graphic {
+        width: 100%;
+        max-width: 450px;
+    }
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-headline {
+        font-size: 2rem;
+    }
+}
